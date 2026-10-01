@@ -13,7 +13,7 @@ The study matches optimizer steps instead of epochs to ensure that the model tra
 
 BBBC041 is over 95% uninfected. Why is plain accuracy the wrong metric, and what is used instead?
 
-BBBC041 is over 95% uninfected, so the model can just learn to say uninfected everytime and will get the 95% accuracy, which is not a good metric. So, the study uses AUC-ROC as the metric.
+BBBC041 is over 95% uninfected, so the model can just learn to say uninfected everytime and will get the 95% accuracy, which is not a good metric. So, the study uses Balanced Accuracy and MCC as the metrics.
 
 
 ## Q3
