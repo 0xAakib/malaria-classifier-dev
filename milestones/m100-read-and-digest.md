@@ -6,14 +6,14 @@
 
 Why does the study match optimizer steps instead of epochs across label fractions? What would a 2% run look like if epochs were matched?
 
-The study matches optimizer steps instead of epochs to ensure that the model trained on small number of data also get as much learning steps as the model trained on large number of data.
+The study matches optimizer steps instead of epochs to ensure that the model trained on small number of data also get as much learning steps as the model trained on large number of data. If epochs were matched, the model trained on 2% data would get much fewer learning steps than the model trained on 100% data.
 
 
 ## Q2
 
 BBBC041 is over 95% uninfected. Why is plain accuracy the wrong metric, and what is used instead?
 
-BBBC041 is over 95% uninfected, so the model can just learn to say uninfected everytime and will get the 95% accuracy, which is not a good metric.
+BBBC041 is over 95% uninfected, so the model can just learn to say uninfected everytime and will get the 95% accuracy, which is not a good metric. So, the study uses AUC-ROC as the metric.
 
 
 ## Q3
@@ -29,8 +29,8 @@ The four methods differ in architecture and pretraining at once. What can the re
 
 <!-- Tick one option: change its [ ] to [x]. -->
 
-- [x] A: Which of these four specific models is most label-efficient
-- [ ] B: Whether ViTs are more label-efficient than CNNs in general
+- [ ] A: Which of these four specific models is most label-efficient
+- [x] B: Whether ViTs are more label-efficient than CNNs in general
 - [ ] C: Nothing; every claim is valid
 
 
