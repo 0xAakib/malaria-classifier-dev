@@ -6,14 +6,14 @@
 
 Why does the study match optimizer steps instead of epochs across label fractions? What would a 2% run look like if epochs were matched?
 
-The study matches optimizer steps instead of epochs to ensure that the model trained on small number of data also get as much learning steps as the model trained on large number of data. If epochs were matched, the model trained on 2% data would get much fewer learning steps than the model trained on 100% data.
+The study matches optimizer steps instead of epochs because when using the same number of epochs, a model trained on 2% of the data would receive far fewer gradient updates (optimizer steps) than a model trained on 100% of the data. If epochs were matched, the 2% run would have roughly 50x fewer optimizer steps, making the comparison unfair.
 
 
 ## Q2
 
 BBBC041 is over 95% uninfected. Why is plain accuracy the wrong metric, and what is used instead?
 
-BBBC041 is over 95% uninfected, so the model can just learn to say uninfected everytime and will get the 95% accuracy, which is not a good metric. So, the study uses Balanced Accuracy and MCC as the metrics.
+BBBC041 is over 95% uninfected, so a naive classifier that always predicts "uninfected" would achieve >95% accuracy without learning anything meaningful. This makes plain accuracy misleading. The study uses Balanced Accuracy (average of per-class recall) and MCC (Matthews Correlation Coefficient) instead, as these metrics properly account for class imbalance.
 
 
 ## Q3
