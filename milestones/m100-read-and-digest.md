@@ -6,14 +6,14 @@
 
 Why does the study match optimizer steps instead of epochs across label fractions? What would a 2% run look like if epochs were matched?
 
-**Answer:**
+The study matches optimizer steps instead of epochs to ensure that the model trained on small number of data also get as much learning steps as the model trained on large number of data.
 
 
 ## Q2
 
 BBBC041 is over 95% uninfected. Why is plain accuracy the wrong metric, and what is used instead?
 
-**Answer:**
+BBBC041 is over 95% uninfected, so the model can just learn to say uninfected everytime and will get the 95% accuracy, which is not a good metric.
 
 
 ## Q3
