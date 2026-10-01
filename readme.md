@@ -1,0 +1,1 @@
+## How Much Labelled Data Does a Found Malaria-Classifier Backbone Actually Need? A Label-Budget Curve Across the Field's Standard and Ignored Benchmarks
