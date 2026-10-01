@@ -6,7 +6,7 @@
 
 Why does the study match optimizer steps instead of epochs across label fractions? What would a 2% run look like if epochs were matched?
 
-The study matches optimizer steps instead of epochs because when using the same number of epochs, a model trained on 2% of the data would receive far fewer gradient updates (optimizer steps) than a model trained on 100% of the data. If epochs were matched, the 2% run would have roughly 50x fewer optimizer steps, making the comparison unfair.
+The study matches optimizer steps instead of epochs because when using the same number of epochs, a model trained on 2% of the data would receive far fewer gradient updates (optimizer steps) than a model trained on 100% of the data. If epochs were matched, the 2% run would have roughly 50x fewer optimizer steps, causing a drop in performance not due to data size but insufficient training time for the model to converge. This would confound the effect of fewer labels with less training.
 
 
 ## Q2
@@ -20,7 +20,7 @@ BBBC041 is over 95% uninfected, so a naive classifier that always predicts "unin
 
 What would go wrong if the train/test split were made per cell instead of per source image?
 
-If the train/test split is made per cell, the similar looking cells can end up in both train and test sets, which implies that the model is tested on the data for which it is already trained. so, the model performance will be overestimated.
+If the train/test split is made per cell, cells from the same slide or source image can end up in both train and test sets. This means the model is tested on data it has effectively already seen during training, causing the model performance to be overestimated.
 
 
 ## Q4
