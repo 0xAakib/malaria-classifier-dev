@@ -1,0 +1,4 @@
+version: 1
+deliverables:
+  m100-read-and-digest:
+    answers: milestones/m100-read-and-digest.md
