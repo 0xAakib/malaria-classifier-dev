@@ -5,3 +5,6 @@ deliverables:
   m200-splits:
     script: src/make_splits.py
     counts: data/split_counts.csv
+  m300-subsets:
+    script: src/make_subsets.py
+    counts: data/subset_counts.csv
