@@ -1,0 +1,45 @@
+{
+  "canonical": {
+    "0": "uninfected",
+    "1": "infected"
+  },
+  "translations": {
+    "nih_folder": {
+      "Parasitized": 1,
+      "Uninfected": 0
+    },
+    "hf_dpdl_benchmark_malaria": {
+      "0": 1,
+      "1": 0
+    },
+    "bbbc041_category": {
+      "gametocyte": 1,
+      "ring": 1,
+      "trophozoite": 1,
+      "schizont": 1,
+      "red blood cell": 0,
+      "leukocyte": 0,
+      "difficult": null
+    },
+    "Sadou/malaria-detector-dinov2-tanzania": {
+      "id2label": {
+        "0": "sain",
+        "1": "paludisme"
+      },
+      "to_canonical": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "ngohjuniormbah/plasmovision-malaria-ai": {
+      "id2label": {
+        "0": "Parasitized",
+        "1": "Uninfected"
+      },
+      "to_canonical": {
+        "0": 1,
+        "1": 0
+      }
+    }
+  }
+}

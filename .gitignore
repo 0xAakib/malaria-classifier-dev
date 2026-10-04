@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+# Rebuilt by src/make_splits.py; ~2.6 GB of zips and images.
+data/_downloads/
+data/nih/
+data/bbbc041/crops/

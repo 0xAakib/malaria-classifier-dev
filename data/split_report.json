@@ -1,0 +1,49 @@
+{
+  "seed": 0,
+  "nih": {
+    "cells": 27558,
+    "source_images": 1408,
+    "source_image_overlap": 0,
+    "test_fingerprint": "288920cbc1e35648ee519cb1995c757c459824a6995cb6e22118b1115f2d7fd9",
+    "train": {
+      "cells": 22043,
+      "source_images": 1123,
+      "infected": 11025,
+      "uninfected": 11018,
+      "infected_rate": 0.5002
+    },
+    "test": {
+      "cells": 5515,
+      "source_images": 285,
+      "infected": 2754,
+      "uninfected": 2761,
+      "infected_rate": 0.4994
+    },
+    "patient_overlap": 159,
+    "patients": 201
+  },
+  "bbbc041": {
+    "cells": 85589,
+    "source_images": 1328,
+    "source_image_overlap": 0,
+    "test_fingerprint": "dd0a97f99bc9d2b30b039037b1fcabf128c5a593009e9ec8142ee8b5f1cefb2a",
+    "train": {
+      "cells": 68461,
+      "source_images": 1062,
+      "infected": 1962,
+      "uninfected": 66499,
+      "infected_rate": 0.0287
+    },
+    "test": {
+      "cells": 17128,
+      "source_images": 266,
+      "infected": 490,
+      "uninfected": 16638,
+      "infected_rate": 0.0286
+    },
+    "test_formats": {
+      "png": 16050,
+      "jpg": 1078
+    }
+  }
+}
